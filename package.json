@@ -1,0 +1,60 @@
+{
+  "name": "stdio-mock",
+  "version": "1.0.0",
+  "description": "Mock Command Line Applications",
+  "main": "lib/index.js",
+  "typings": "lib/index.d.ts",
+  "scripts": {
+    "test:lint": "tslint src/**/*.ts src/*.ts",
+    "test:unit": "mocha -r ts-node/register test/*.ts",
+    "test": "npm run test:lint && npm run test:unit",
+    "commit": "git-cz",
+    "changelog": "conventional-changelog --infile CHANGELOG.md --same-file --release-count 0 --preset angular",
+    "build": "tsc",
+    "preversion": "npm run build",
+    "postversion": "git push origin master && git push origin --tags && npm publish && npm run changelog",
+    "release:minor": "npm version minor -m 'chore(package): v%s'",
+    "release:major": "npm version major -m 'chore(package): v%s'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TylorS/stdio-mock.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": {
+    "name": "Tylor Steinberger",
+    "email": "tlsteinberger167@gmail.com",
+    "url": "https://github.com/Tylors"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TylorS/stdio-mock/issues"
+  },
+  "homepage": "https://github.com/TylorS/stdio-mock#readme",
+  "config": {
+    "commitizen": {
+      "path": "cz-conventional-changelog"
+    },
+    "ghooks": {
+      "precommit": "npm test",
+      "commit-msg": "node ./node_modules/.bin/validate-commit-msg"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/mocha": "^2.2.32",
+    "@types/node": "^6.0.46",
+    "commitizen": "^2.8.6",
+    "conventional-changelog-cli": "^1.2.0",
+    "cz-conventional-changelog": "^1.2.0",
+    "ghooks": "^1.3.2",
+    "mocha": "^3.1.2",
+    "ts-node": "^1.6.1",
+    "tslint": "^3.15.1",
+    "typescript": "^2.0.7",
+    "validate-commit-msg": "^2.8.2"
+  },
+  "peerDependencies": {}
+}
