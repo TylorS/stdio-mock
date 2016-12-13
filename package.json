@@ -1,6 +1,6 @@
 {
   "name": "stdio-mock",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Mock Command Line Applications",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
