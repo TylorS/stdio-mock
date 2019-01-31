@@ -1,7 +1,7 @@
 {
-  "name": "stdio-mock",
-  "version": "1.1.0",
-  "description": "Mock Command Line Applications",
+  "name": "stdio-mock--fork-by-wiseteam",
+  "version": "1.1.2",
+  "description": "Mock Command Line Applications. Fork by wise-team",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
   "scripts": {
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TylorS/stdio-mock.git"
+    "url": "git+https://github.com/wise-team/stdio-mock.git"
   },
   "keywords": [
     "typescript"
@@ -28,11 +28,14 @@
     "email": "tlsteinberger167@gmail.com",
     "url": "https://github.com/Tylors"
   },
+  "contributors": [
+    "Jędrzej Lewandowski <jedrzejblew@gmail.com> (https://jedrzej.lewandowski.doctor/)"
+  ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TylorS/stdio-mock/issues"
+    "url": "https://github.com/wise-team/stdio-mock/issues"
   },
-  "homepage": "https://github.com/TylorS/stdio-mock#readme",
+  "homepage": "https://github.com/wise-team/stdio-mock#readme",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
@@ -44,13 +47,13 @@
   },
   "dependencies": {},
   "devDependencies": {
-    "@types/mocha": "^2.2.32",
+    "@types/mocha": "^2.2.48",
     "@types/node": "^6.0.46",
     "commitizen": "^2.8.6",
     "conventional-changelog-cli": "^1.2.0",
     "cz-conventional-changelog": "^1.2.0",
     "ghooks": "^1.3.2",
-    "mocha": "^3.1.2",
+    "mocha": "^5.2.0",
     "ts-node": "^1.6.1",
     "tslint": "^3.15.1",
     "typescript": "^2.0.7",
