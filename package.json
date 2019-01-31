@@ -1,6 +1,6 @@
 {
   "name": "stdio-mock--fork-by-wiseteam",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Mock Command Line Applications",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
