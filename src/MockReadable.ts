@@ -13,7 +13,7 @@ export class MockReadable extends stream.Readable {
     super(Object.assign({}, defaults, options));
   }
 
-  protected _read (size?: number): void {
+  public _read (size?: number): void {
     const data = this._data;
 
     if (size === void 0) {
