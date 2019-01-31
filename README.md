@@ -1,3 +1,17 @@
+# :fork_and_knife: 'Standard I/O Mock' forked by Wise team
+
+This fork resolves the following issue:
+> Class 'MockReadable' incorrectly extends base class 'Readable'.
+> Property '_read' is protected in type 'MockReadable' but public in type 'Readable'.
+
+To install it, please sh:
+
+```bash
+$ npm install --save stdio-mock--fork-by-wiseteam
+```
+
+***
+
 # Standard I/O Mock
 
 A basic implementation of Readable and Writable streams to mock 
