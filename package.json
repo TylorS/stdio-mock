@@ -1,6 +1,6 @@
 {
   "name": "stdio-mock--fork-by-wiseteam",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Mock Command Line Applications. Fork by wise-team",
   "main": "lib/index.js",
   "typings": "lib/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/TylorS/stdio-mock.git"
+    "url": "git+https://github.com/wise-team/stdio-mock.git"
   },
   "keywords": [
     "typescript"
@@ -33,9 +33,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/TylorS/stdio-mock/issues"
+    "url": "https://github.com/wise-team/stdio-mock/issues"
   },
-  "homepage": "https://github.com/TylorS/stdio-mock#readme",
+  "homepage": "https://github.com/wise-team/stdio-mock#readme",
   "config": {
     "commitizen": {
       "path": "cz-conventional-changelog"
