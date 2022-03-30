@@ -12,9 +12,9 @@ export class MockWritable extends stream.Writable {
     callback();
   }
 
-  public end (): void {
+  public end (): this {
     this.emit('end');
-    super.end();
+    return super.end();
   }
 
   public write(data: any): boolean {
