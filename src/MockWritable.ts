@@ -7,14 +7,14 @@ export class MockWritable extends stream.Writable {
     super(options);
   }
 
-  protected _write (data: Buffer | string, encoding: string, callback: Function) {
+  public _write (data: Buffer | string, encoding: string, callback: Function) {
     this.emit('data', Buffer.isBuffer(data) ? data.toString('utf8' || encoding) : data);
     callback();
   }
 
-  public end (): void {
+  public end (): this {
     this.emit('end');
-    super.end();
+    return super.end();
   }
 
   public write(data: any): boolean {
